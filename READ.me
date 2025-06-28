@@ -1,0 +1,50 @@
+# 🐱🐶 Cat vs Dog Classifier using SVM
+
+A simple Machine Learning project that classifies images of cats and dogs using **Support Vector Machines (SVM)**.
+
+---
+
+## 📁 Dataset
+
+- Source: [Kaggle Dogs vs Cats](https://www.kaggle.com/c/dogs-vs-cats/data)
+- Total Images Used:
+  - Cats: 10,000
+  - Dogs: 10,000
+
+---
+
+## ⚙️ Features
+
+- Preprocessing using OpenCV (`cv2`)
+- Image resized to **64x64** and flattened
+- Balanced dataset using random undersampling
+- Trained using **Linear SVM**
+- Validation accuracy printed during training
+
+---
+
+## 🧠 Model Performance
+
+- ✅ Total Images Loaded: 20,000
+- 🎯 Validation Accuracy: **~93%**
+- 📦 Trained Model: `svm_model.pkl` (saved in `model/` folder)
+
+---
+
+## 📤 Output
+
+All output files and results are saved in the [`outputs/`](outputs/) folder:
+- `training_output.txt`: Training log with accuracy
+- `prediction_output.txt`: Prediction results on test images
+- `screenshots/`: Terminal screenshots of model run
+
+---
+
+## 🚀 How to Run
+
+```bash
+# Train the model
+python train.py
+
+# Predict on test images
+python predict.py
